@@ -51,7 +51,7 @@ Question.prototype.displayQuestion = function(){
 		  myHTMLOutput += '<input type="checkbox" name="answer" value="' + i + '" />' + this.questionChoices[i] + "<br />";
 		 
 		}
-		 myHTMLOutput += '<input type="button" value="Check" onClick="myQuestion.checkAnswer()" />';
+		 //place this code after you call the displatQuestion method <input type="button" value="Check" onClick="myQuestion.checkAnswer()" />';
 		document.write(myHTMLOutput);
 	
 }
