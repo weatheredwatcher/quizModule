@@ -6,16 +6,9 @@
 	Created: April 27th, 2010
 	Last Modified: April 27th, 2010 DWD
 */
-Array.prototype.compare = function(testArr) {
-    if (this.length != testArr.length) return false;
-    for (var i = 0; i < testArr.length; i++) {
-        if (this[i].compare) { 
-            if (!this[i].compare(testArr[i])) return false;
-        }
-        if (this[i] !== testArr[i]) return false;
-    }
-    return true;
-}
+
+
+/* Begin Question Class */
 
 function Question(questionType, questionText, questionChoices, questionAnswers, answers){
 	
